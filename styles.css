@@ -352,3 +352,26 @@ h2 {
     .bracket-section { display: none; } /* Hide bracket on phone */
     .tall-box { height: auto; }
 }
+
+.equipment-gallery {
+    display: flex;         /* Puts images side-by-side */
+    gap: 10px;             /* Space between the two images */
+    margin-top: 15px;      /* Space between text and images */
+    justify-content: center;
+}
+
+.equip-img {
+    width: 48%;            /* Each image takes up roughly half the box */
+    height: 120px;         /* FORCE specific height so they align perfectly */
+    object-fit: cover;     /* Crops image slightly to fill the square without stretching */
+    border-radius: 6px;    /* Rounded corners */
+    border: 2px solid #3498db; /* Optional: Blue border to match theme */
+    transition: transform 0.3s ease; /* Animation setup */
+    cursor: pointer;
+}
+
+/* Optional: Slight zoom effect when you hover over the image */
+.equip-img:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
