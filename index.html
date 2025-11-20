@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuchen Li - Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="profile-img">
+            <img src="https://via.placeholder.com/150" alt="Shuchen Li">
+        </div>
+        <h1>Shuchen Li</h1>
+        <p class="title">Ph.D. Candidate in Materials Science</p>
+        <p class="university">University of Illinois Urbana-Champaign</p>
+        
+        <div class="social-links">
+            <a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="YOUR_SCHOLAR_URL" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            <a href="mailto:sl117@illinois.edu"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <nav>
+            <button class="tab-btn active" onclick="openTab(event, 'About')">About</button>
+            <button class="tab-btn" onclick="openTab(event, 'Projects')">Projects</button>
+            <button class="tab-btn" onclick="openTab(event, 'Publications')">Publications</button>
+            <button class="tab-btn" onclick="openTab(event, 'CV')">CV</button>
+        </nav>
+    </aside>
+
+    <main class="content">
+        
+        <div id="About" class="tab-content" style="display: block;">
+            <h2>About Me</h2>
+            <p>Welcome. I am a Ph.D. candidate in the Axel Hoffmann Group at UIUC.</p>
+            <p>My research focuses on spintronics, cleanroom microfabrication, and quantum device physics. I also have extensive experience as an Equipment Manager, maintaining thin-film deposition systems.</p>
+        </div>
+
+        <div id="Projects" class="tab-content" style="display: none;">
+            <h2>Research Projects</h2>
+            
+            <div class="project-card">
+                <h3>1. Giant Magnetoresistance in Mn3Sn</h3>
+                <p>Synthesized high-quality epitaxial Mn3Sn thin films on MgO substrates...</p>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>2. Spin-Orbit Torques in MoTe2</h3>
+                <p>Fabricated nano-devices using photolithography and ion-milling...</p>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>3. HAMR Heat Sink Layers (Western Digital)</h3>
+                <p>Improved heat sink layer laser absorption by 20% using sputtering...</p>
+            </div>
+        </div>
+
+        <div id="Publications" class="tab-content" style="display: none;">
+            <h2>Selected Publications</h2>
+            <ul>
+                <li><strong>Li, S.</strong>, et al. "Title of your paper." <em>Journal Name</em>, 2025.</li>
+                <li><strong>Li, S.</strong>, et al. "Title of conference paper." <em>APS March Meeting</em>, 2024.</li>
+            </ul>
+        </div>
+
+        <div id="CV" class="tab-content" style="display: none;">
+            <h2>Curriculum Vitae</h2>
+            <p>
+                <a href="./Shuchen_Li_Resume.pdf" class="download-btn" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Download Full Resume
+                </a>
+            </p>
+            <h3>Summary of Skills</h3>
+            <ul>
+                <li><strong>Processing:</strong> Sputtering (AJA), E-beam Evap, Lithography, Ion Milling.</li>
+                <li><strong>Characterization:</strong> XRD, SEM, AFM, PPMS.</li>
+                <li><strong>Software:</strong> Python, LabVIEW.</li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        // Hide all tab content
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Remove active class from all buttons
+        tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab and add active class
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>
+Step 2: Create the Styling File (styles.css)
+This file controls the layout (Sidebar on left, Content on right) and makes it look professional.
+
+In your repository, click Add file > Create new file.
+
+Name the file: styles.css
+
+Paste this code:
+
+CSS
+
+/* RESET & BASIC FONTS */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* LAYOUT CONTAINER */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR STYLING */
+.sidebar {
+    width: 280px;
+    background-color: #2c3e50; /* Dark Blue/Grey Professional */
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ecf0f1;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0;
+}
+
+.title, .university {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #bdc3c7;
+    margin: 5px 0;
+}
+
+/* SOCIAL ICONS */
+.social-links {
+    margin: 20px 0;
+}
+.social-links a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* NAVIGATION BUTTONS */
+nav {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tab-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: #bdc3c7;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.tab-btn:hover {
+    background-color: #34495e;
+    color: white;
+}
+
+.tab-btn.active {
+    background-color: #34495e;
+    color: white;
+    border-left: 4px solid #3498db; /* Blue highlight */
+}
+
+/* MAIN CONTENT AREA */
+.content {
+    margin-left: 280px; /* Same width as sidebar */
+    padding: 50px 60px;
+    flex: 1;
+    background-color: white;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* PROJECT CARDS */
+.project-card {
+    margin-bottom: 20px;
+}
+.project-card h3 {
+    margin-bottom: 5px;
+    color: #2980b9;
+}
+
+/* BUTTONS */
+.download-btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.download-btn:hover {
+    background-color: #1c6ea4;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .sidebar { 
+        width: 100%; 
+        position: relative; 
+        height: auto; 
+        padding: 20px;
+    }
+    .content { margin-left: 0; padding: 20px; }
+    .profile-img img { width: 100px; height: 100px; }
+}
