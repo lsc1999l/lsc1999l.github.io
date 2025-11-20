@@ -1,7 +1,7 @@
 # Shuchen Li
 **Ph.D. Candidate in Materials Science & Engineering | Semiconductor Process Engineer**
 📍 Urbana, IL | 📧 sl117@illinois.edu
-[LinkedIn](INSERT_LINK_HERE) | [Google Scholar](INSERT_LINK_HERE) | [Download Resume (PDF)](LINK_TO_YOUR_PDF)
+[LinkedIn](https://www.linkedin.com/in/shuchen-li-863a3426b/) | [Google Scholar](https://scholar.google.com/citations?user=5-QIPLcAAAAJ&hl=en) | [Download Resume (PDF)](LINK_TO_YOUR_PDF)
 
 ---
 
