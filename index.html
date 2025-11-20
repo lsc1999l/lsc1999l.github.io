@@ -34,53 +34,57 @@
 
     <main class="content">
         
-        <div id="About" class="tab-content" style="display: block;">
+<div id="About" class="tab-content" style="display: block;">
     
     <h2>About Me</h2>
-    <p>Brief introduction text goes here (optional).</p>
-
-    <div class="about-row">
-        <div class="about-card education-card">
-            <h3><i class="fas fa-graduation-cap"></i> Education Timeline</h3>
-            <ul class="timeline-list">
-                <li><strong>Ph.D. in Materials Science</strong> <br> UIUC (2020 - 2026)</li>
-                <li><strong>B.S. in Physics</strong> <br> Tulane University (2017 - 2020)</li>
-            </ul>
-        </div>
-        <div class="spacer"></div>
+    
+    <div class="box-container full-width">
+        <h3><i class="fas fa-graduation-cap"></i> Education Timeline</h3>
+        <ul class="timeline">
+            <li>
+                <span class="year">Expected 2026</span> 
+                <span class="school"><strong>Ph.D. Materials Science & Engineering</strong> <br> University of Illinois Urbana-Champaign</span>
+            </li>
+            <li>
+                <span class="year">2020</span> 
+                <span class="school"><strong>B.S. Physics</strong> (GPA: 3.98) <br> Tulane University</span>
+            </li>
+        </ul>
     </div>
 
-    <div class="about-row dual-section">
+    <div class="split-layout">
         
         <div class="left-stack">
-            <div class="about-card research-card">
+            
+            <div class="box-container explicit-box">
                 <h3><i class="fas fa-microscope"></i> Research Focus</h3>
-                <p>Input your text here later (e.g., Spintronics, Mn3Sn, etc.).</p>
+                <p><strong>Spintronics & Quantum Devices:</strong> Investigating Spin-Orbit Torques in MoTe2 and Giant Magnetoresistance in Mn3Sn.</p>
+                <p><strong>HAMR Tech:</strong> Heat-Assisted Magnetic Recording material synthesis (Western Digital Internship).</p>
             </div>
 
-            <div class="about-card manager-card">
+            <div class="box-container explicit-box">
                 <h3><i class="fas fa-tools"></i> Equipment Manager</h3>
-                <p>Input your text here later (e.g., AJA Sputter maintenance, SOPs).</p>
+                <p><strong>Lead Tool Owner:</strong> Maintenance & troubleshooting for AJA Sputtering, E-beam Evaporation, and Ion Milling systems.</p>
+                <p><strong>Process Control:</strong> Author of 5 SOPs; specialized in vacuum system repair and cryo-pump maintenance.</p>
             </div>
         </div>
 
-        <div class="bracket-container">
-            <div class="bracket"></div>
+        <div class="bracket-section">
+            <div class="curly-brace"></div>
         </div>
 
         <div class="right-stack">
-            <div class="about-card skills-card">
-                <h3><i class="fas fa-code-branch"></i> Skills</h3>
-                <ul>
-                    <li>Input skill 1</li>
-                    <li>Input skill 2</li>
-                    <li>Input skill 3</li>
-                    <li>Input skill 4</li>
+            <div class="box-container explicit-box tall-box">
+                <h3><i class="fas fa-clipboard-check"></i> Technical Skills</h3>
+                <ul class="skill-list">
+                    <li><strong>Fabrication:</strong> Sputtering (AJA), E-beam Lithography (Raith), Photolithography, Ion Milling, RIE.</li>
+                    <li><strong>Characterization:</strong> XRD, SEM, AFM, Ellipsometry, PPMS, Dilution Fridge.</li>
+                    <li><strong>Software:</strong> Python (Automation), LabVIEW, SolidWorks, KLayout.</li>
                 </ul>
             </div>
         </div>
-    </div>
 
+    </div>
 </div>
 
         <div id="Projects" class="tab-content" style="display: none;">
