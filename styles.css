@@ -239,3 +239,116 @@ h2 {
     .education-card, .spacer, .left-stack, .right-stack { width: 100%; }
     .bracket-container { display: none; /* Hide bracket on mobile */ }
 }
+
+.box-container {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #34495e; /* Subtle border definition */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Drop shadow for "pop" */
+    margin-bottom: 20px;
+}
+
+.box-container h3 {
+    color: #3498db; /* Light Blue Title */
+    border-bottom: 1px solid #7f8c8d;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* TOP ROW: Education Timeline */
+.full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+.timeline li {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3e5871;
+    padding-bottom: 10px;
+}
+.timeline .year {
+    font-weight: bold;
+    color: #3498db;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+/* BOTTOM LAYOUT GRID */
+.split-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* Makes items same height */
+    gap: 10px;
+}
+
+/* Left Column */
+.left-stack {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes boxes to top and bottom */
+}
+.explicit-box {
+    height: 100%; /* Fill available space */
+}
+
+/* Right Column */
+.right-stack {
+    width: 45%;
+}
+.tall-box {
+    height: 94%; /* slightly shorter to account for margin */
+}
+
+/* CENTER BRACKET DESIGN */
+.bracket-section {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This draws the actual bracket shape */
+.curly-brace {
+    width: 20px;
+    height: 80%;
+    border-top: 2px solid #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    border-right: 2px solid #2c3e50; /* The "back" of the bracket pointing right */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+}
+/* The little pointer in the middle of the bracket */
+.curly-brace::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #2c3e50; /* The point color */
+    transform: translateY(-50%);
+}
+
+/* SKILLS LIST styling */
+.skill-list li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* MOBILE FIX: Stack everything vertically on phones */
+@media (max-width: 768px) {
+    .split-layout { flex-direction: column; }
+    .left-stack, .right-stack, .bracket-section { width: 100%; }
+    .bracket-section { display: none; } /* Hide bracket on phone */
+    .tall-box { height: auto; }
+}
