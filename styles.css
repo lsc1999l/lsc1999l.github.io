@@ -419,3 +419,41 @@ h2 {
 .sop-btn i {
     font-size: 0.8rem; /* Make the download icon small */
 }
+.skill-category h4 {
+    margin: 15px 0 8px 0;
+    color: #bdc3c7;      /* Light grey for category titles */
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #3e5871; /* Subtle divider line */
+    padding-bottom: 5px;
+}
+
+/* The container that holds the tags */
+.skill-cloud {
+    display: flex;
+    flex-wrap: wrap; /* Allows tags to drop to the next line */
+    gap: 8px;        /* Space between the tags */
+    margin-bottom: 15px;
+}
+
+/* THE INDIVIDUAL SKILL BOXES */
+.skill-tag {
+    background-color: #34495e; /* Darker blue background */
+    color: #ecf0f1;            /* White text */
+    padding: 5px 10px;         /* Spacing inside the box */
+    border-radius: 4px;        /* Rounded corners */
+    border: 1px solid #46647c; /* Subtle border */
+    display: inline-block;
+    
+    /* --- FREELY ADJUST FONT SIZE HERE --- */
+    font-size: 0.9rem;         /* <--- CHANGE THIS NUMBER (e.g., 0.8rem for small, 1.1rem for big) */
+}
+
+/* Hover effect to make them pop */
+.skill-tag:hover {
+    background-color: #3498db; /* Bright blue on hover */
+    border-color: white;
+    transform: translateY(-2px); /* Moves up slightly */
+    cursor: default;
+}
