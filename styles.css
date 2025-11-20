@@ -362,7 +362,7 @@ h2 {
 
 .equip-img {
     width: 48%;            /* Each image takes up roughly half the box */
-    height: 120px;         /* FORCE specific height so they align perfectly */
+    height: 180px;         /* FORCE specific height so they align perfectly */
     object-fit: cover;     /* Crops image slightly to fill the square without stretching */
     border-radius: 6px;    /* Rounded corners */
     border: 2px solid #3498db; /* Optional: Blue border to match theme */
