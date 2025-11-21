@@ -550,3 +550,15 @@ h2 {
     font-style: italic;
     margin-top: 8px;
 }
+
+/* --- PUBLICATION LINKS --- */
+.pub-link {
+    color: #2980b9;       /* Professional Blue */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold;
+}
+
+.pub-link:hover {
+    text-decoration: underline; /* Adds underline only when hovering */
+    color: #1c5a85;       /* Darker blue on hover */
+}
