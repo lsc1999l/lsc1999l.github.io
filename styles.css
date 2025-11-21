@@ -562,3 +562,28 @@ h2 {
     text-decoration: underline; /* Adds underline only when hovering */
     color: #1c5a85;       /* Darker blue on hover */
 }
+
+/* --- CV VIEWER STYLING --- */
+
+.cv-viewer-container {
+    width: 100%;
+    height: 800px; /* Sets a nice tall window for the resume */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #525659; /* Grey background like standard PDF viewers */
+}
+
+.pdf-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Mobile Adjustment: On phones, PDFs are hard to scroll inside a page. 
+   We reduce the height or hide the embed so they just use the download button. */
+@media (max-width: 768px) {
+    .cv-viewer-container {
+        height: 400px; 
+    }
+}
