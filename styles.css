@@ -255,6 +255,7 @@ h2 {
     border-bottom: 1px solid #7f8c8d;
     padding-bottom: 10px;
     margin-top: 0;
+    font-size: 1.5rem;
 }
 
 /* TOP ROW: Education Timeline */
@@ -497,4 +498,25 @@ h2 {
     background-color: #3498db;
     color: white;
     cursor: default;
+}
+
+/* --- FONT SIZE ADJUSTMENTS --- */
+
+/* 1. This changes bold words like "Spintronics" */
+.box-container strong {
+    font-size: 1.2rem; /* Try 1.2rem or 1.3rem */
+    color: #2c3e50;    /* Optional: Changes it to dark blue */
+    display: block;    /* Ensures it sits on its own line if needed */
+    margin-bottom: 5px;
+}
+
+/* 2. This changes the normal description text */
+.box-container p {
+    font-size: 1.0rem; /* Standard is 1.0rem. Try 1.05rem or 1.1rem */
+    line-height: 1.6;  /* Adds space between lines */
+}
+
+/* 3. This changes the list items (Education Timeline) */
+.timeline li {
+    font-size: 1.0rem; /* Adjust as needed */
 }
