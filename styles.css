@@ -505,7 +505,7 @@ h2 {
 /* 1. This changes bold words like "Spintronics" */
 .box-container strong {
     font-size: 1.2rem; /* Try 1.2rem or 1.3rem */
-    color: #2c3e50;    /* Optional: Changes it to dark blue */
+    color: #ecf0f1;    /* Optional: Changes it to dark blue */
     display: block;    /* Ensures it sits on its own line if needed */
     margin-bottom: 5px;
 }
