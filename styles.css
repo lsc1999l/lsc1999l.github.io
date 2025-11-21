@@ -290,7 +290,7 @@ h2 {
     margin-top: 8px;
 }
 
-/* --- FANCY PUBLICATION CARDS (NEW!) --- */
+/* --- FANCY PUBLICATION CARDS (UPDATED) --- */
 .pub-grid {
     display: flex;
     flex-direction: column;
@@ -309,14 +309,33 @@ h2 {
     transform: translateX(5px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
+
+/* Make title clickable */
 .pub-card h3 {
     margin: 0 0 10px 0;
-    color: #2c3e50;
     font-size: 1.2rem;
     padding-right: 80px;
 }
-.pub-authors { margin: 5px 0; color: #555; font-size: 1.0rem; }
-.pub-venue { margin: 5px 0 15px 0; color: #7f8c8d; font-size: 0.9rem; }
+.pub-card h3 a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.2s;
+}
+.pub-card h3 a:hover {
+    color: #3498db; /* Blue on hover */
+}
+
+/* Combined info line */
+.pub-info { 
+    margin: 5px 0; 
+    color: #555; 
+    font-size: 1.0rem; 
+}
+.divider {
+    color: #bdc3c7;
+    margin: 0 8px;
+    font-weight: normal;
+}
 
 .pub-badge {
     position: absolute;
@@ -331,16 +350,6 @@ h2 {
 .pub-badge.journal { background-color: #e8f6f3; color: #1abc9c; }
 .pub-badge.conference { background-color: #fef5e7; color: #f39c12; }
 
-.read-link {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-    font-size: 0.9rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-}
-.read-link:hover { color: #1c5a85; }
 
 /* --- CV VIEWER & BUTTONS --- */
 .cv-viewer-container {
