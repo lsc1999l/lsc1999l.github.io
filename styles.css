@@ -533,7 +533,7 @@ h2 {
 
 .project-graph {
     /* CHANGE THIS LINE: */
-    width: 20%;            /* Sets width to roughly 1/3 of the container */
+    width: 28%;            /* Sets width to roughly 1/3 of the container */
     
     /* OPTIONAL: Set a minimum size so it doesn't get too tiny on phones */
     min-width: 300px;      
